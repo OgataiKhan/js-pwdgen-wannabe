@@ -14,3 +14,18 @@ console.log(elementName.innerHTML);
 console.log(elementSurname.innerHTML);
 console.log(elementColor.innerHTML);
 console.log(elementNumber.innerHTML);
+
+//End of the exercise
+
+// One extra bonus because I wanted to learn more: use a function with a loop to randomize the background color
+
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+  
+  document.body.style.backgroundColor = getRandomColor();
